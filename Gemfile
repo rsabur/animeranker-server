@@ -16,6 +16,17 @@ gem 'puma', '~> 5.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#netflix fast json serializer :D
+gem 'fast_jsonapi'
+
+#debugger
+gem 'pry'
+
+#scraper gems
+gem 'open-uri'
+
+gem 'nokogiri'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
