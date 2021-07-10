@@ -48,6 +48,6 @@ class GenresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def genre_params
-      params.require(:genre).permit(:title)
+      params.require(:genre).permit(:mal_id, :rank, :title, :url, :image, :type, :episodes, :start_date, :end_date, :members, :score)
     end
 end
