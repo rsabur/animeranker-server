@@ -7,7 +7,8 @@ class GenresController < ApplicationController
    
     Genre.api
 
-    render json: @genres
+    render json: GenreSerializer.new(@genres)
+
   end
 
   # GET /genres/1
