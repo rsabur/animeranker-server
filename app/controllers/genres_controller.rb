@@ -43,10 +43,12 @@ class GenresController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_genre
+     
       #api call to set genre
       Genre.api(params[:id])
+  
       # query genre by params[:id] to find all genres by its kind i.e. "tv"
-      @genre = Genre.where(kind: params[:id].upcase)
+      @genre = Genre.where(kind: params[:id])
     end
 
     # Only allow a list of trusted parameters through.
