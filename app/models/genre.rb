@@ -25,10 +25,8 @@ class Genre < ApplicationRecord
 
         response = http.request(request)
         
-
         data = JSON.parse(response.body)
 
-    
         data['top'].each do |x|
             mal_id = x['mal_id']
             rank = x['rank']

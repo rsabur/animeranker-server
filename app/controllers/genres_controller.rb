@@ -45,7 +45,7 @@ class GenresController < ApplicationController
     def set_genre
      
       #api call to set genre
-      Genre.api(params[:id])
+      Genre.api(params[:id].downcase)
   
       # query genre by params[:id] to find all genres by its kind i.e. "tv"
       @genre = Genre.where(kind: params[:id])
