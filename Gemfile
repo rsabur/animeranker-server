@@ -24,10 +24,9 @@ gem 'pry'
 
 #scraper gems
 gem 'open-uri'
-
 gem 'nokogiri'
-
 gem 'net-http'
+gem 'json'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
