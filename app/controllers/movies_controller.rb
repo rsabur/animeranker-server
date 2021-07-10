@@ -4,8 +4,10 @@ class MoviesController < ApplicationController
   # GET /movies
   def index
     @movies = Movie.all
-
+    Movie.scrape_movies
     render json: @movies
+
+
   end
 
   # GET /movies/1

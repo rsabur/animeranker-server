@@ -75,6 +75,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    io-wait (0.1.0)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -89,6 +90,12 @@ GEM
     mini_portile2 (2.5.3)
     minitest (5.14.4)
     msgpack (1.4.2)
+    net-http (0.1.1)
+      net-protocol
+      uri
+    net-protocol (0.1.1)
+      io-wait
+      timeout
     nio4r (2.5.7)
     nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
@@ -145,8 +152,10 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     thor (1.1.0)
+    timeout (0.1.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    uri (0.10.1)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -161,6 +170,7 @@ DEPENDENCIES
   byebug
   fast_jsonapi
   listen (~> 3.3)
+  net-http
   nokogiri
   open-uri
   pg (~> 1.1)

@@ -5,6 +5,8 @@ class ShowsController < ApplicationController
   def index
     @shows = Show.all
 
+    binding.pry
+
     render json: @shows
   end
 

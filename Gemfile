@@ -27,6 +27,7 @@ gem 'open-uri'
 
 gem 'nokogiri'
 
+gem 'net-http'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
