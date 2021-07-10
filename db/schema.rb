@@ -15,20 +15,18 @@ ActiveRecord::Schema.define(version: 2021_07_09_231641) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "movies", force: :cascade do |t|
+  create_table "genres", force: :cascade do |t|
+    t.integer "mal_id"
+    t.integer "rank"
     t.string "title"
-    t.string "description"
-    t.string "genre"
-    t.string "image"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "shows", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.string "genre"
-    t.string "image"
+    t.string "url"
+    t.string "image_url"
+    t.string "kind"
+    t.integer "episodes"
+    t.string "start_date"
+    t.string "end_date"
+    t.integer "members"
+    t.float "score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
